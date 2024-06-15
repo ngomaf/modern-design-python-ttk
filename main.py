@@ -22,20 +22,20 @@ def nova_conta():
 root = Tk()
 
 # frames
-borda = Frame(root, style='Borda.TFrame')
-borda.pack(fill='x', expand=True)
+bord = Frame(root, style='Borda.TFrame')
+bord.pack(fill='x', expand=True)
 
-topo = Frame(borda)
-topo.pack()
+lay_top = Frame(bord)
+lay_top.pack()
 
-centro = Frame(borda)
+centro = Frame(bord)
 centro.pack()
 
-base = Frame(borda)
+base = Frame(bord)
 base.pack()
 
 logo = PhotoImage(file=r'logo_d.png')
-lb_logo = Label(topo, image=logo)
+lb_logo = Label(lay_top, image=logo)
 lb_logo.image = logo
 lb_logo.pack()
 
