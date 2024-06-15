@@ -28,8 +28,8 @@ bord.pack(fill='x', expand=True)
 lay_top = Frame(bord)
 lay_top.pack()
 
-centro = Frame(bord)
-centro.pack()
+center = Frame(bord)
+center.pack()
 
 base = Frame(bord)
 base.pack()
@@ -39,18 +39,18 @@ lb_logo = Label(lay_top, image=logo)
 lb_logo.image = logo
 lb_logo.pack()
 
-Label(centro, text='E-mail').pack(anchor='w', pady=(10,0))
-et_email = tkEntry(centro, font=('Montserrat', 12, 'bold'), fg='#666', relief='flat', 
+Label(center, text='E-mail').pack(anchor='w', pady=(10,0))
+et_email = tkEntry(center, font=('Montserrat', 12, 'bold'), fg='#666', relief='flat', 
         highlightbackground='white', highlightcolor='white')
 et_email.focus_force()
 et_email.pack(fill='x')
-Separator(centro, orient='horizontal').pack(fill='x')
+Separator(center, orient='horizontal').pack(fill='x')
 
-Label(centro, text='Senha').pack(anchor='w', pady=(10,0))
-et_senha =  tkEntry(centro, show='*', font=('Montserrat', 12, 'bold'), fg='#666', relief='flat', 
+Label(center, text='Senha').pack(anchor='w', pady=(10,0))
+et_senha =  tkEntry(center, show='*', font=('Montserrat', 12, 'bold'), fg='#666', relief='flat', 
         highlightbackground='white', highlightcolor='white')
 et_senha.pack()
-Separator(centro, orient='horizontal').pack(fill='x', pady=(0,20))
+Separator(center, orient='horizontal').pack(fill='x', pady=(0,20))
 
 Button(base, text='ENTRAR', command=login, cursor='hand1').pack(fill='x', pady=(0,10))
 Label(base, text='Ainda não tens uma conta? ', style='Small.TLabel').pack(side='left')
